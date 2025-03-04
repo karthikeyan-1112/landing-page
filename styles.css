@@ -1,0 +1,194 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('landing images/bk img.jpeg');
+    background-size: cover;
+    color: #333;
+    
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: black;
+    box-shadow: 0 2px 4px white;
+}
+
+.logo .title {
+    font-family: 'Press Start 2P', cursive;
+    
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-shadow: 5px 3px 5px grey;
+}
+
+.logo .slogan {
+    font-family: 'Lobster', cursive;
+    font-size: 1.2rem;
+    color: teal;
+}
+
+nav ul.fashion {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul.fashion li a {
+    text-decoration: none;
+    color: olivedrab;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul.fashion li a:hover {
+    background-color: #333;
+}
+
+.sign-up {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.sign-up:hover {
+    background-color: #333;
+}
+
+/* Hero Section */
+.hero {
+    display: block;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-image: url('images/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: rgb(129, 11, 11);
+    text-align: center;
+  
+    
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e65a50;
+}
+
+/* New Arrivals Section */
+.new-arrivals {
+    padding: 50px;
+    text-align: center;
+}
+
+.new-arrivals h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product {
+    background-color: black;
+    color: rgb(74, 4, 4);
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.product img {
+    width:180px ;
+    height:280px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* Footer Section */
+footer {
+    padding: 40px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.cta-button:hover{
+    color: black;
+    background-color: gray;
+    
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff6f61;
+}
