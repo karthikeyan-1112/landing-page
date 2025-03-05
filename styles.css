@@ -22,6 +22,13 @@ header {
     box-shadow: 0 2px 4px white;
 }
 
+.list{
+    list-style: none;
+    display: flex;
+    padding-top: 10px;
+    gap: 10px;
+}
+
 .logo .title {
     font-family: 'Press Start 2P', cursive;
     font-size: 1.5rem;
@@ -76,14 +83,20 @@ nav ul.fashion li a:hover {
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 400px;
-    background-image: url('landing images/hero-sec.webp');
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    background-image: url('landing images/hero-sec2.webp');
     background-size: cover;
     background-position: center;
-    padding: 0 50px;
+    background-repeat: no-repeat;
+    width: 100%; /* Ensures full width */
     position: relative;
+    text-align: center;
+    color: white;
+    padding: 20px;
 }
+
+
 
 .hero-overlay {
     position: absolute;
@@ -139,11 +152,13 @@ nav ul.fashion li a:hover {
 }
 
 .cta-button1 {
-    background-color: #ff6f61;
+    background-color: teal;
     color: white;
     padding: 10px 20px;
-    margin-left: 43%;
+    margin-left: 44%;
+    margin-top: 18%;
     position:absolute;
+    font-size: large;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
