@@ -8,10 +8,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url('landing images/bk img.jpeg');
     background-size: cover;
     color: #333;
-    
 }
 
 /* Header Section */
@@ -26,7 +24,6 @@ header {
 
 .logo .title {
     font-family: 'Press Start 2P', cursive;
-    
     font-size: 1.5rem;
     color: whitesmoke;
     text-shadow: 5px 3px 5px grey;
@@ -71,39 +68,82 @@ nav ul.fashion li a:hover {
 }
 
 .sign-up:hover {
-    background-color: #333;
+    background-color: black;
+    color: white;
 }
 
 /* Hero Section */
 .hero {
-    display: block;
-    padding-top: 100px;
-    justify-content: center;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
     height: 400px;
-    background-image: url('images/hero-bg.jpg');
+    background-image: url('landing images/hero-sec.webp');
     background-size: cover;
     background-position: center;
-    color: rgb(129, 11, 11);
-    text-align: center;
-  
-    
+    padding: 0 50px;
+    position: relative;
 }
 
+.hero-overlay {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.hero-overlay img {
+    width: 200px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Neon Glow Effect */
 .hero-content h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    color: white;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px black;
+    text-shadow: 
+        0 0 5px black, 
+        0 0 5px black, 
+        0 0 5px black, 
+        0 0 5px black, 
+        0 0 5px black;
+        
 }
 
 .hero-content p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+    color: white;
+    font-size:larger;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 
+        0 0 5px black, 
+        0 0 5px black, 
+        0 0 5px black, 
+        0 0 5px black, 
+        0 0 5px black;
+
+    
+       
 }
 
-.cta-button {
+.cta-button1 {
     background-color: #ff6f61;
     color: white;
     padding: 10px 20px;
+    margin-left: 43%;
+    position:absolute;
     text-decoration: none;
     border-radius: 50px;
     font-weight: bold;
@@ -118,12 +158,22 @@ nav ul.fashion li a:hover {
 .new-arrivals {
     padding: 50px;
     text-align: center;
+    background-color: teal;
 }
 
 .new-arrivals h2 {
     font-size: 2rem;
     margin-bottom: 30px;
-    
+}
+.cta-button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
 }
 
 .product-grid {
@@ -142,8 +192,8 @@ nav ul.fashion li a:hover {
 }
 
 .product img {
-    width:180px ;
-    height:280px;
+    width: 180px;
+    height: 280px;
     margin-bottom: 15px;
 }
 
@@ -177,12 +227,6 @@ footer {
     gap: 20px;
 }
 
-.cta-button:hover{
-    color: black;
-    background-color: gray;
-    
-}
-
 .social-links a {
     color: white;
     text-decoration: none;
@@ -191,4 +235,32 @@ footer {
 
 .social-links a:hover {
     color: #ff6f61;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 20px;
+    }
+
+    .hero-overlay {
+        margin-bottom: 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        width: 80%;
+    }
 }
