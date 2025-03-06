@@ -25,7 +25,6 @@ header {
 .list{
     list-style: none;
     display: flex;
-    padding-top: 10px;
     gap: 10px;
 }
 
@@ -127,6 +126,7 @@ nav ul.fashion li a:hover {
     color: white;
     text-transform: uppercase;
     -webkit-text-stroke: 2px black;
+    -webkit-text-stroke-color: red;
     text-shadow: 
         0 0 5px black, 
         0 0 5px black, 
@@ -179,6 +179,8 @@ nav ul.fashion li a:hover {
 .new-arrivals h2 {
     font-size: 2rem;
     margin-bottom: 30px;
+    text-transform: uppercase;
+  
 }
 .cta-button {
     background-color: #ff6f61;
